@@ -25,10 +25,9 @@ class _DesktopLayoutState extends State<DesktopLayout> {
         decoration: Styles.gradientDecoration,
         child: SingleChildScrollView(
           child: Column(
-
             children: [
               Container(
-                margin: EdgeInsets.symmetric( vertical: size.height * 0.18),
+                margin: EdgeInsets.symmetric(vertical: size.height * 0.18),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,28 +39,23 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                         HeaderTextWidget(
                           size: size,
                         ),
-                        SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                         Social_large(size: size),
-
                       ],
                     ),
-
-                    Expanded(child: Container(
-
-
-                      child: Column
-                        (
+                    Expanded(
+                        child: Container(
+                      child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          RotatingImageContainer()
-
-                        ],
+                        children: [RotatingImageContainer()],
                       ),
                     ))
                   ],
                 ),
               ),
-            /*  Container(
+              /*  Container(
                 margin: EdgeInsets.symmetric(horizontal: size.width*0.05),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -78,40 +72,58 @@ class _DesktopLayoutState extends State<DesktopLayout> {
 
               SizedBox(height: size.height*0.12,),
                   */
-  Container(
-
-    color: AppColors.ebony,
-    padding: EdgeInsets.symmetric(vertical: size.width*0.05),
-    child: Column(
-      children: [
-
-
-        GradientText( "My Quality Services", colors: [
-
-          AppColors.studio,
-          AppColors.paleSlate,
-        ],
-
-      style: TextStyle(
-          fontSize: size.width * 0.030,
-          fontFamily: 'Poppins',
-          fontWeight: FontWeight.bold),
-
-        ),
-        SizedBox(height: size.height*0.02,),
-        Text('I turn your ideas into innovative software and AI solutions that inspire both you and your customers, delivering impactful results.', style: TextStyle(
-            fontSize:size.width*0.012,
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w400,
-            color: Colors.white
-        ),),
-
-        SizedBox(height: size.height*0.05,),
-        MyServicesWidget(size:size),
-      ],
-    ),
-  )
-
+              Container(
+                color: AppColors.ebony,
+                padding: EdgeInsets.symmetric(vertical: size.width * 0.05),
+                child: Column(
+                  children: [
+                    GradientText(
+                      "My Quality Services",
+                      colors: [
+                        AppColors.studio,
+                        AppColors.paleSlate,
+                      ],
+                      style: TextStyle(
+                          fontSize: size.width * 0.030,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: size.height * 0.02,
+                    ),
+                    Text(
+                      'I turn your ideas into innovative software and AI solutions that inspire both you and your customers, delivering impactful results.',
+                      style: TextStyle(
+                          fontSize: size.width * 0.012,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white),
+                    ),
+                    SizedBox(
+                      height: size.height * 0.05,
+                    ),
+                    MyServicesWidget(size: size),
+                  ],
+                ),
+              ),
+              Container(
+                 padding: EdgeInsets.symmetric(vertical: size.width * 0.05),
+                child: Column(
+                  children: [
+                    GradientText(
+                      "My Recent Work",
+                      colors: [
+                        AppColors.studio,
+                        AppColors.paleSlate,
+                      ],
+                      style: TextStyle(
+                          fontSize: size.width * 0.030,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
