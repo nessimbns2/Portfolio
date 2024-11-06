@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/styles.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
+import 'package:porfolio/screens/widgets/all_projects_widget.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
 import 'package:porfolio/screens/widgets/myservice_widgets.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
@@ -121,7 +122,16 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold),
                     ),
-                  ],
+                  
+                    SizedBox(
+                      height: size.height * 0.02,
+                    ),
+                    
+                   Padding(
+                     padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.12, right: MediaQuery.of(context).size.width * 0.10, top:50 ),
+                     child: AllProjects(size: size),
+                   ),
+                    ],
                 ),
               ),
             ],

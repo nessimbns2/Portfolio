@@ -36,7 +36,7 @@ class HeaderTextWidget extends StatelessWidget {
             size: size,
             alignment: TextAlign.center,
             text1: "Machine Learning &",
-            text2: "Software Developer",
+            text2: "Software Developper",
           ),
           SizedBox(
             width: size.width * 0.5,
